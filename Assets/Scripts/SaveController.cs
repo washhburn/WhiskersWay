@@ -33,7 +33,8 @@ public class SaveController : MonoBehaviour
         QuestManager.Instance.AcceptQuest(mainQuest);
     }
 
-    public void SaveGame() //method to save game data
+    //method to save game data
+    public void SaveGame() 
     {
         if (inventoryController == null)
         {
@@ -58,11 +59,12 @@ public class SaveController : MonoBehaviour
         File.WriteAllText(saveLocation, JsonUtility.ToJson(saveData));
     }
 
-    public void LoadGame() //method to load saved game data
+    //method to load saved game data
+    public void LoadGame() 
     {
         if (!File.Exists(saveLocation))
         {
-            SaveGame(); //Om ingen savefile hittas, spara ny savefile
+            SaveGame(); //if there is no saved file found, create new savefile
             return;
         }
 
@@ -126,6 +128,7 @@ public class SaveController : MonoBehaviour
         SaveGame();
     }
 
+    //method to return to latest checkpoint when player dies and chooses Load Game
     public async void RestartFromCheckpoint()
     {
         int currentScene = SceneManager.GetActiveScene().buildIndex;
@@ -146,11 +149,14 @@ public class SaveController : MonoBehaviour
             await ScreenFader.Instance.FadeIn();
     }
 
+    //method to reset game when player chooses New Game
     public void ResetSave()
     {
         currentCheckpointID = -1;
         currentCheckpointPosition = Vector3.zero;
         lastSavedScene = 1;
         if (File.Exists(saveLocation)) File.Delete(saveLocation);
+        QuestManager.Instance.activeQuests.Clear();
+        FindAnyObjectByType<InventoryController>()?.ClearInventory();
     }
 }

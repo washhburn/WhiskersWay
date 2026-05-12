@@ -18,11 +18,6 @@ public class ScreenFader : MonoBehaviour
         else Destroy(gameObject);
     }
 
-    private void Update()
-    {
-        if (Instance == null) Instance = this;
-    }
-
     async Task Fade(float targetTransparency)
     {
         float start = canvasGroup.alpha, t = 0;

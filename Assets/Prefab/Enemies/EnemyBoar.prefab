@@ -250,7 +250,7 @@ MonoBehaviour:
   runSpeed: 5
   canRun: 1
   damage: 3
-  detectionRange: 10
+  detectionRange: 15
   attackCooldown: 3
   lastAttack: 0
   anim: {fileID: 8875520744343290248}

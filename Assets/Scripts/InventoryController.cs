@@ -129,7 +129,7 @@ public class InventoryController : MonoBehaviour
     }
 
     //method to clear inventory
-    void ClearInventory()
+    public void ClearInventory()
     {
         foreach (Slot slot in slots)
         {

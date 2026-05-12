@@ -3,6 +3,8 @@ using Unity.Cinemachine;
 using Unity.VisualScripting;
 using UnityEngine;
 
+// Teleportation from door outside to door inside, two different physical places on map
+
 public class Teleportation : MonoBehaviour, IInteractable
 {
     [SerializeField] private Transform teleportTarget;

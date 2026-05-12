@@ -1,6 +1,8 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+//Takes care of respawn logic - when player dies during gameplay, Game Over panel gives choice to respawn or exit game.
+
 public class GameOverMenu : MonoBehaviour
 {
     public GameObject gameOverPanel;

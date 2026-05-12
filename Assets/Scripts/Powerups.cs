@@ -24,10 +24,7 @@ public class Powerups : MonoBehaviour
             case itemType.DamageBoost:
                 AttackHitbox hitbox = other.GetComponentInChildren<AttackHitbox>();
                 if (hitbox != null)
-                    PowerupManager.Instance.ApplyPowerup(
-                        () => hitbox.damage += boostAmount,
-                        () => hitbox.damage -= boostAmount,
-                        duration);
+                    hitbox.damage += boostAmount;
                 break;
 
             case itemType.SpeedBoost: 
@@ -39,16 +36,15 @@ public class Powerups : MonoBehaviour
                         duration);   
                 break;
 
-            case itemType ShieldBoost: 
+            case itemType.ShieldBoost: 
                 PlayerHealth health = other.GetComponent<PlayerHealth>();
                 if (health != null)
-                    PowerupManager.Instance.ApplyPowerup(
-                        () => { health.maxLives += (int)boostAmount; health.Heal((int)boostAmount); },
-                        () => { health.maxLives -= (int)boostAmount; health.lives = Mathf.Clamp(health.lives, 0, health.maxLives); },
-                        duration);
+                {
+                    health.maxLives += (int)boostAmount;
+                    health.Heal((int)boostAmount);
+                }  
                 break;
         }
         Destroy(this.gameObject);
     }
-
 }

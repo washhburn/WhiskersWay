@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//Handles NPCs movement through waypoints
+
 public class WaypointMover : MonoBehaviour
 {
     public Transform waypointParent;

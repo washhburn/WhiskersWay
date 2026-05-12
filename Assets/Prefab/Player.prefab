@@ -345,7 +345,7 @@ MonoBehaviour:
   maxLives: 6
   invincibilityTime: 1
   maxStamina: 100
-  stamina: 200
+  stamina: 300
   regenDelay: 1
   regenRate: 50
   canRun: 1
@@ -609,9 +609,9 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: 1537473173
+  m_SortingLayer: 7
+  m_SortingOrder: 1000
   m_MaskInteraction: 0
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

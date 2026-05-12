@@ -21,7 +21,7 @@ MonoBehaviour:
   - text: 'Hrm, sorry about that. '
     autoProgress: 0
   duringQuest:
-  - text: 'Still not hungry? Hehe, good cat. '
+  - text: 'You''re not going to eat us? Hehe, good cat. '
     autoProgress: 0
   - text: Oh, you're looking for Calvin? I heard he wanted to go on an adventure
       in the forest next to town.
