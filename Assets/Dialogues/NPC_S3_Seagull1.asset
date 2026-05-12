@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14b9290989b12e140b708c940b05caca, type: 3}
+  m_Name: NPC_S3_Seagull1
+  m_EditorClassIdentifier: Assembly-CSharp::NPCDialogue
+  npcName: Seagull Seamus
+  beforeQuest:
+  - text: '*Squeeaaaak*'
+    autoProgress: 1
+  - text: 'This town is surrounded by snakes these days. I cannot reach the other
+      islands, where my friend is! '
+    autoProgress: 0
+  - text: Could you help me clear the path?
+    autoProgress: 0
+  duringQuest:
+  - text: Did you kill the snakes yet? I need to reach my friend!
+    autoProgress: 0
+  afterQuest:
+  - text: Thank you, my friend! Now I can finally continue on my journey, thanks
+      to you.
+    autoProgress: 0
+  - text: You can take this as payment, friend!
+    autoProgress: 0
+  - text: '*You were given a quest item!* '
+    autoProgress: 0
+  autoProgressDelay: 1
+  typingSpeed: 0.05
+  voiceSound: {fileID: 0}

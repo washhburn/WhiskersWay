@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14b9290989b12e140b708c940b05caca, type: 3}
+  m_Name: NPC_S3_Fox2
+  m_EditorClassIdentifier: Assembly-CSharp::NPCDialogue
+  npcName: Fox Robert
+  beforeQuest:
+  - text: '*Grumble-grumble*'
+    autoProgress: 1
+  - text: Hello kitty. Sorry, I am feeling a bit down.
+    autoProgress: 0
+  - text: I don't know if you've noticed, but we've been infested by snakes and evil
+      reptiles.
+    autoProgress: 0
+  - text: My wife Ruby is sick inside the house and needs some herbs to get better.
+      The snakes are in the way, though.
+    autoProgress: 0
+  - text: I tried to kill them, but the cobra on the Eastern island got me.
+    autoProgress: 0
+  - text: You're saying you can help us? Oh, that would be amazing! Head inside and
+      speak to Ruby, she will let you know what you need!
+    autoProgress: 0
+  duringQuest:
+  - text: Hello, champion! Did the snakes get you too?
+    autoProgress: 0
+  afterQuest:
+  - text: Our champion of Fox Isles! You absolute champ, thank you for what you've
+      done for us!
+    autoProgress: 0
+  autoProgressDelay: 1
+  typingSpeed: 0.05
+  voiceSound: {fileID: 0}

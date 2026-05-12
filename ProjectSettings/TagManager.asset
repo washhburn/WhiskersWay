@@ -3,15 +3,17 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 3
-  tags: []
+  tags:
+  - Enemy
+  - InventoryPage
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Player
   - Water
   - UI
-  - 
+  - JumpableObjects
   - 
   - 
   - 
@@ -50,6 +52,9 @@ TagManager:
   - name: Collision
     uniqueID: 555125743
     locked: 0
+  - name: JumpableObjects
+    uniqueID: 602555375
+    locked: 0
   - name: Player
     uniqueID: 149780347
     locked: 0
@@ -58,6 +63,9 @@ TagManager:
     locked: 0
   - name: Decor
     uniqueID: 1537473173
+    locked: 0
+  - name: IslandCollider
+    uniqueID: 2006075733
     locked: 0
   m_RenderingLayers:
   - Default

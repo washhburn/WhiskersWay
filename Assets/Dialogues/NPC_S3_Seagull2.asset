@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14b9290989b12e140b708c940b05caca, type: 3}
+  m_Name: NPC_S3_Seagull2
+  m_EditorClassIdentifier: Assembly-CSharp::NPCDialogue
+  npcName: Seagull Steven
+  beforeQuest:
+  - text: '*Squeeaaaak*'
+    autoProgress: 1
+  - text: Hi there! The Fox Isles are lovely to live in, but there's been a lot of
+      snakes here lately.
+    autoProgress: 0
+  - text: If you need to a place to fish, you won't find any better place than here!
+    autoProgress: 0
+  duringQuest:
+  - text: Oh, you're collecting berries for me? How nice of you. But where is my
+      friend?
+    autoProgress: 0
+  afterQuest:
+  - text: Wow, you've managed to collect a good amount of berries!
+    autoProgress: 0
+  - text: Thank you, I will take them off of you - and devour them immediately of
+      course!
+    autoProgress: 0
+  - text: Here's some shiny item I found before, you can take it. See you around!
+    autoProgress: 0
+  - text: '*You were given a quest item!* '
+    autoProgress: 0
+  autoProgressDelay: 1
+  typingSpeed: 0.05
+  voiceSound: {fileID: 0}

@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14b9290989b12e140b708c940b05caca, type: 3}
+  m_Name: NPC_S1_Sheep
+  m_EditorClassIdentifier: Assembly-CSharp::NPCDialogue
+  npcName: Sheep Sharon
+  beforeQuest:
+  - text: Oh no... What should I do...
+    autoProgress: 1
+  - text: Oh! I am sorry, I didn't see you there.
+    autoProgress: 0
+  - text: Our house was invaded by snakes, and now my poor lamb is stuck inside with
+      them!
+    autoProgress: 0
+  - text: I cannot fight against them. Could you please help me kill the snakes?
+    autoProgress: 0
+  - text: If you need to prepare yourself before entering the house, there is a fishing
+      post nearby.
+    autoProgress: 0
+  - text: When you fight against the snakes, press E to attack!
+    autoProgress: 0
+  duringQuest:
+  - text: My poor lamb... Did you kill the snakes yet?
+    autoProgress: 1
+  afterQuest:
+  - text: My hero! Thank you for helping my lamb! We are eternally grateful.
+    autoProgress: 0
+  - text: Here - take this! It's all I have on me, but my lamb is worth it!
+    autoProgress: 0
+  - text: '*You were given a quest item!*'
+    autoProgress: 0
+  autoProgressDelay: 1
+  typingSpeed: 0.05
+  voiceSound: {fileID: 0}

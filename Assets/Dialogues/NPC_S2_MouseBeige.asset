@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14b9290989b12e140b708c940b05caca, type: 3}
+  m_Name: NPC_S2_MouseBeige
+  m_EditorClassIdentifier: Assembly-CSharp::NPCDialogue
+  npcName: Mouse Miles
+  beforeQuest:
+  - text: Argghhh a cat!!
+    autoProgress: 1
+  - text: Oh, you're not going to eat me?
+    autoProgress: 0
+  - text: 'Hrm, sorry about that. '
+    autoProgress: 0
+  duringQuest:
+  - text: 'Still not hungry? Hehe, good cat. '
+    autoProgress: 0
+  - text: Oh, you're looking for Calvin? I heard he wanted to go on an adventure
+      in the forest next to town.
+    autoProgress: 0
+  - text: I believe it's the forest to the East.
+    autoProgress: 0
+  afterQuest:
+  - text: Good job finding Calvin, kitty. I heard he was in some trouble out there.
+    autoProgress: 0
+  autoProgressDelay: 1
+  typingSpeed: 0.05
+  voiceSound: {fileID: 0}

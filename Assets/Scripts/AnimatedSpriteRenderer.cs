@@ -4,14 +4,12 @@ public class AnimatedSpriteRenderer : MonoBehaviour
 {
     private SpriteRenderer spriteRenderer;
     private Sprite[] sprites;
-    private int frame;
 
+    private int frame;
     public float animationSpeed = 0.15f; // Time between frames in seconds
     private float timer;
-
     private bool loop;
     private bool isPlaying;
-
     public System.Action onAnimationComplete;
 
     private void Awake()
@@ -19,7 +17,7 @@ public class AnimatedSpriteRenderer : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
-    public void PlayAnimation(Sprite[] newSprites, bool loopAnimation)
+    public void PlayAnimation(Sprite[] newSprites, bool loopAnimation, System.Action onComplete = null)
     {
         if (newSprites == null || newSprites.Length == 0) return;
 
@@ -28,10 +26,13 @@ public class AnimatedSpriteRenderer : MonoBehaviour
         frame = 0;
         timer = 0f;
         isPlaying = true;
-
-        onAnimationComplete = null;
-
         spriteRenderer.sprite = sprites[0];
+        onAnimationComplete = onComplete;
+    }
+
+    public void StopAnimation()
+    {
+        isPlaying = false;
     }
 
     private void Update()
@@ -58,7 +59,11 @@ public class AnimatedSpriteRenderer : MonoBehaviour
                 return;
             }
         }
-
         spriteRenderer.sprite = sprites[frame];
+    }
+
+    public bool IsPlaying(Sprite[] checkSprites)
+    {
+        return isPlaying && sprites == checkSprites;
     }
 }

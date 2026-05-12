@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f977715a856dde8469d3cb75f0a5b2db, type: 3}
+  m_Name: S3_SeagullQuest2
+  m_EditorClassIdentifier: Assembly-CSharp::Quest
+  questID: 4291eb1c-5376-4bc1-8cf4-4608b39a5158
+  questName: Collecting berries
+  description: Help carry the berries to Seagull's friend.
+  objectives:
+  - objectiveID: S3_sg2_0
+    targetEnemy: 0
+    locationID: 
+    npcID: 
+    itemName: berries
+    description: Collect 5 berries for Seagull.
+    type: 0
+    requiredAmount: 5
+    currentAmount: 0
+    sceneIndex: 0
+  - objectiveID: S3_sg2_1
+    targetEnemy: 0
+    locationID: 
+    npcID: 302
+    itemName: 
+    description: You've collected the berries. Now bring them to Seagull's friend,
+      who is on the island furthest away to the South-East.
+    type: 3
+    requiredAmount: 1
+    currentAmount: 0
+    sceneIndex: 0
+  rewardItem: {fileID: 2785685343523820269, guid: ed770f3612816344db9df85a8ded2a9a, type: 3}

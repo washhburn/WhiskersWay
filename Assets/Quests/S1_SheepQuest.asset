@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f977715a856dde8469d3cb75f0a5b2db, type: 3}
+  m_Name: S1_SheepQuest
+  m_EditorClassIdentifier: Assembly-CSharp::Quest
+  questID: 5b577ecf-bb14-4db5-b418-6c33b58abe26
+  questName: Rescue Lamb
+  description: Kill the enemies lodging inside Sheep and Lamb's house.
+  objectives:
+  - objectiveID: S1_sheep_0
+    targetEnemy: 0
+    locationID: sheephouse_outside
+    npcID: 
+    itemName: 
+    description: Enter Sheep's house.
+    type: 2
+    requiredAmount: 1
+    currentAmount: 0
+    sceneIndex: 0
+  - objectiveID: S1_sheep_1
+    targetEnemy: 0
+    locationID: 
+    npcID: 
+    itemName: 
+    description: Kill the snakes!
+    type: 1
+    requiredAmount: 2
+    currentAmount: 0
+    sceneIndex: 0
+  - objectiveID: S1_sheep_2
+    targetEnemy: 0
+    locationID: 
+    npcID: 100
+    itemName: 
+    description: Go talk to Sheep to let them know that you've saved their lamb from
+      the snakes.
+    type: 3
+    requiredAmount: 1
+    currentAmount: 0
+    sceneIndex: 0
+  rewardItem: {fileID: 2785685343523820269, guid: ed770f3612816344db9df85a8ded2a9a, type: 3}

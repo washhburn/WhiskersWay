@@ -1,0 +1,116 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8355868022467595515
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5303167204920279253}
+  - component: {fileID: 8862562715072635813}
+  - component: {fileID: 5981142348750023451}
+  - component: {fileID: 5985615176573925126}
+  m_Layer: 0
+  m_Name: FishingSpot
+  m_TagString: Untagged
+  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5303167204920279253
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8355868022467595515}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -19.58, y: 80.03, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &8862562715072635813
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8355868022467595515}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_Radius: 1.53
+--- !u!114 &5981142348750023451
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8355868022467595515}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d53b4d53ba888f142b75224a2f95e0a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Sign
+  text: "Low on health? \nCats love to fish, so naturally, you can raise your health
+    bar by fishing and eating whatever fish you catch.\nPress F to close this window. "
+  textBoxUI: {fileID: 0}
+  textBoxText: {fileID: 0}
+  closeOnExit: 0
+--- !u!114 &5985615176573925126
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8355868022467595515}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d010d1087e284e4283dec7195ee4dda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FishingSign
+  fishPrefabs:
+  - {fileID: 7996856593951121708, guid: 7901d829da0baf044ab8cb02b9e1bbed, type: 3}
+  - {fileID: 7996856593951121708, guid: 9d4f22d5a5d7880408a00ce80cd6720c, type: 3}
+  - {fileID: 7996856593951121708, guid: b34e0d6a56570f84a8eb4f3f9dc27041, type: 3}
+  - {fileID: 7996856593951121708, guid: 7fc338ca4621b2b468d425394328cd31, type: 3}
+  trashPrefabs:
+  - {fileID: 7996856593951121708, guid: 3543dd1816d5b304999e3c46e31bb2d6, type: 3}
+  - {fileID: 7996856593951121708, guid: f5bdc0b1b9e04634d82b0116ed5f47a6, type: 3}
+  fishChance: 0.7
+  spawnDistance: 1.2
+  obstacleLayer:
+    serializedVersion: 2
+    m_Bits: 16
+  minFishingTime: 1
+  maxFishingTime: 3

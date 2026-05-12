@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14b9290989b12e140b708c940b05caca, type: 3}
+  m_Name: NPC_S2_Bull
+  m_EditorClassIdentifier: Assembly-CSharp::NPCDialogue
+  npcName: Bull Bruce
+  beforeQuest:
+  - text: Where is my calf Calvin...
+    autoProgress: 1
+  - text: Hello, cat. Sorry - I am a not in a good mood right now.
+    autoProgress: 0
+  - text: My calf, Calvin, went to town to play this morning, but he has not returned
+      yet.
+    autoProgress: 0
+  - text: I hurt my knees many years ago, so I cannot walk that far.
+    autoProgress: 0
+  - text: Could you head up to town and see where he has gone to?
+    autoProgress: 0
+  duringQuest:
+  - text: Did you hear anything yet about Calvin?
+    autoProgress: 0
+  - text: You can try asking the mice brothers, they are usually up to date with
+      what happens around town.
+    autoProgress: 0
+  afterQuest:
+  - text: I thank you, good cat! My Calvin is saved, and from some evil snakes!
+    autoProgress: 0
+  autoProgressDelay: 1
+  typingSpeed: 0.05
+  voiceSound: {fileID: 0}
